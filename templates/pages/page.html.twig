@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Page: {{ page }}
+{% endblock %}
+
+{% block body %}
+
+</h1>{{ page }}</h1>
+
+{# Comment #}
+
+<div>
+    465456
+</div>
+
+<h2>Answers ({{ (answers|length) }})</h2>
+<ul>
+    {% for answer in answers %}
+    <li>{{ answer }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
